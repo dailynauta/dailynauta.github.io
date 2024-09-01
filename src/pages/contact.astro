@@ -1,0 +1,47 @@
+---
+import Contactform from "@components/contactform.astro";
+import Container from "@components/container.astro";
+import Sectionhead from "@components/sectionhead.astro";
+import Layout from "@layouts/Layout.astro";
+import { Icon } from "astro-icon/components";
+---
+
+<Layout title="Contact" >
+  <Container class="text-yellow-400">
+    <Sectionhead>
+      <Fragment slot="title" >Contacto</Fragment>
+      <Fragment slot="desc">
+        <p class="text-blue-400">Estamos aquí para ayudar.</p>
+      </Fragment>
+    </Sectionhead>
+
+    <div class="grid md:grid-cols-2 gap-10 mx-auto max-w-4xl mt-16">
+      <div>
+        <p class="text-lg leading-relaxed text-red-500 mt-3">
+          Te responderemos en menos de 24 horas.
+        </p>
+        <div class="mt-5">
+          <div class="flex items-center mt-2 space-x-2 text-blue-400">
+            <Icon class="text-blue-400 w-4 h-4" name="uil:map-marker" />
+            <span>ANTONIO BELLET 193 OF 1210, Providencia</span>
+          </div>
+          <div class="flex items-center mt-2 space-x-2 text-red-500">
+            <Icon class="text-red-500 w-4 h-4" name="uil:envelope" />
+            <a href="mailto:contacto@codeia.cl" class="hover:text-yellow-400">
+              contacto@codeia.cl
+            </a>
+          </div>
+          <div class="flex items-center mt-2 space-x-2 text-blue-400">
+            <Icon class="text-blue-400 w-4 h-4" name="uil:phone" />
+            <a href="tel:+56 (9) 936418650" class="hover:text-yellow-400">
+              +56 (9) 936418650
+            </a>
+          </div>
+        </div>
+      </div>
+      <div>
+        <Contactform />
+      </div>
+    </div>
+  </Container>
+</Layout>

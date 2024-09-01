@@ -1,0 +1,103 @@
+---
+import { SEO } from "astro-seo";
+import Footer from "@components/footer.astro";
+import Navbar from "@components/navbar/navbar.astro";
+import "@fontsource-variable/inter/index.css";
+import '@fontsource-variable/bricolage-grotesque';
+
+export interface Props {
+  title: string;
+}
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.site).toString();
+
+const resolvedImageWithDomain = new URL(
+  "/opengraph.jpg",
+  Astro.site
+).toString();
+
+const { title } = Astro.props;
+
+const makeTitle = title
+  ? title + " | " + "codeIA"
+  : "codeIA Tecnología para el futuro";
+---
+
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+  <head>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+
+    <SEO
+      title={makeTitle}
+      description="codeIA tecnología para el futuro"
+      canonical={canonicalURL}
+      twitter={{
+        creator: "@devjaime",
+        site: "@devjaime",
+        card: "summary_large_image",
+      }}
+      openGraph={{
+        basic: {
+          url: canonicalURL,
+          type: "website",
+          title: `codeIA Tecnología para el futuro`,
+          image: resolvedImageWithDomain,
+        },
+        image: {
+          alt: "codeIA Homepage Screenshot",
+        },
+      }}
+    />
+  </head>
+  <body class="font-simpson bg-simpsonSkyNight text-slate-800 dark:bg-slate-900 bg-starry-night bg-cover bg-center">
+    <Navbar />
+    <slot />
+    <Footer />
+    <style is:global>
+      /* Mejorar la velocidad de carga */
+      /* https://css-tricks.com/almanac/properties/c/content-visibility/ */
+      img {
+        content-visibility: auto;
+      }
+
+      /* Estilos globales adicionales */
+      body {
+        font-family: 'Cabin Sketch', 'Comic Sans MS', cursive;
+        background-color: #0a1a2f; /* Cielo nocturno oscuro */
+        background-image:
+          radial-gradient(circle at 20% 20%, #ffffff 2px, transparent 2px),
+          radial-gradient(circle at 80% 30%, #ffffff 1.5px, transparent 2px),
+          radial-gradient(circle at 50% 50%, #ffffff 1px, transparent 1px),
+          radial-gradient(circle at 10% 80%, #ffffff 2px, transparent 2px),
+          radial-gradient(circle at 70% 70%, #ffffff 1px, transparent 1px),
+          radial-gradient(circle at 90% 40%, #ffffff 1.5px, transparent 1.5px),
+          radial-gradient(circle at 40% 60%, #ffffff 1px, transparent 1px),
+          radial-gradient(circle at 30% 40%, #ffffff 2px, transparent 2px),
+          radial-gradient(circle at 60% 10%, #ffffff 1.5px, transparent 1.5px);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        color: #333; /* Texto oscuro para buen contraste */
+      }
+
+      /* Ajustes de color para enlaces y encabezados */
+      a {
+        color: #3B82F6; /* Azul vibrante */
+        text-decoration: none;
+      }
+      
+      a:hover {
+        color: #EF4444; /* Rojo vibrante al pasar el cursor */
+      }
+      
+      h1, h2, h3, h4, h5, h6 {
+        color: #FDD835; /* Amarillo similar al de "Los Simpson" */
+        font-family: 'Cabin Sketch', cursive;
+      }
+    </style>
+  </body>
+</html>

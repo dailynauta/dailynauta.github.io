@@ -1,0 +1,76 @@
+---
+import { Picture } from "astro:assets";
+import heroImage from "assets/dailynauta2.png";
+import Link from "@components/ui/link.astro";
+import { Icon } from "astro-icon/components";
+---
+
+<main
+  class="grid lg:grid-cols-2 place-items-center pt-16 pb-8 md:pt-12 md:pb-24">
+  <div class="py-6 md:order-1 hidden md:block">
+    <Picture
+      id="astronaut"
+      src={heroImage}
+      alt="Astronaut in the air"
+      widths={[200, 400, 600]}
+      sizes="(max-width: 800px) 100vw, 620px"
+      loading="eager"
+      format="avif"
+      class="h-full w-full object-cover"
+    />
+  </div>
+  <div>
+    <h1
+      class="text-5xl lg:text-6xl xl:text-7xl font-bold lg:tracking-tight xl:tracking-tighter text-yellow-400">
+      Daily Nauta
+    </h1>
+    <p class="text-lg mt-4 text-blue-500 max-w-xl">
+      This is a digital newspaper for technology news. <br />
+      <p class="text-sm mt-2 text-red-500 max-w-xl">
+        A new concept in digital news.
+      </p>
+    </p>
+    <div class="mt-6 flex flex-col sm:flex-row gap-3">
+      <Link
+        href="#"
+        href="https://api.whatsapp.com/send?phone=56936418650"
+        target="_blank"
+        class="flex gap-1 items-center justify-center"
+        rel="noopener">
+        <Icon class="w-5 h-5 text-[#25D366]" name="bx:bxl-whatsapp" />
+        whatsapp
+      </Link>
+      <Link
+        size="lg"
+        style="outline"
+        rel="noopener"
+        href="https://github.com/dailynauta"
+        class="flex gap-1 items-center justify-center"
+        target="https://github.com/dailynauta">
+        <Icon class="text-black w-4 h-4" name="bx:bxl-github" />
+        GitHub Repo
+      </Link>
+    </div>
+  </div>
+</main>
+
+<style>
+  @keyframes float {
+    30% {
+      transform: translate3d(3, 1, 0);
+    }
+    100% {
+      transform: translate3d(0, 90px, 0);
+    }
+  }
+
+  #astronaut {
+    animation: float linear 6s infinite alternate;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    #astronaut {
+      animation: none;
+    }
+  }
+</style>
