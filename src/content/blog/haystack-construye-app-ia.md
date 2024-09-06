@@ -3,12 +3,12 @@ draft: false
 title: "Introducción a Haystack: Construyendo Aplicaciones de IA"
 snippet: "Haystack es un framework de código abierto que permite construir aplicaciones de inteligencia artificial combinando componentes modulares en pipelines. Aprende cómo funciona y cómo puedes utilizarlo en tus proyectos."
 image: {
-    src: "https://raw.githubusercontent.com/codeIASpa/codeIASpa.github.io/main/public/blogimg/haystack.png",
+    src: "https://raw.githubusercontent.com/dailynauta/dailynauta.github.io/main/public/blogimg/haystack.png",
     alt: "Haystack, AI, OpenAI, Pipelines"
 }
-publishDate: "2024-09-06 11:00"
+publishDate: "2024-09-05 15:39"
 category: "Inteligencia Artificial"
-author: "Jaime Hernández"
+author: "devjaime"
 tags: [haystack, IA, OpenAI, Document Embedding, Pipelines, Python]
 ---
 
