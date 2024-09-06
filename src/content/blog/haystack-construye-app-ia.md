@@ -6,7 +6,7 @@ image: {
     src: "https://raw.githubusercontent.com/codeIASpa/codeIASpa.github.io/main/public/blogimg/haystack.png",
     alt: "Haystack, AI, OpenAI, Pipelines"
 }
-publishDate: "2024-09-06 12:00"
+publishDate: "2024-09-06 11:00"
 category: "Inteligencia Artificial"
 author: "Jaime Hernández"
 tags: [haystack, IA, OpenAI, Document Embedding, Pipelines, Python]
