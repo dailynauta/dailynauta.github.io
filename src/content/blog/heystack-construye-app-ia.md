@@ -14,7 +14,7 @@ tags: [haystack, IA, OpenAI, Document Embedding, Pipelines, Python]
 
 # <div class="text-gray-300">Introducción</div> 
 
-En el desarrollo de aplicaciones de inteligencia artificial, la modularidad y la capacidad de construir pipelines eficientes son cruciales. **Haystack**, un framework de código abierto en Python, permite a los desarrolladores combinar componentes flexibles para crear soluciones avanzadas de búsqueda semántica y procesamiento de lenguaje natural (NLP). En este blog, exploraremos qué es Haystack, cómo funciona, y algunos casos de uso clave.
+En el desarrollo de aplicaciones de inteligencia artificial, la modularidad y la capacidad de construir pipelines eficientes son cruciales. "Haystack", un framework de código abierto en Python, permite a los desarrolladores combinar componentes flexibles para crear soluciones avanzadas de búsqueda semántica y procesamiento de lenguaje natural (NLP). En este blog, exploraremos qué es Haystack, cómo funciona, y algunos casos de uso clave.
 
 ## <div class="text-gray-300">¿Qué es Haystack?</div> 
 
@@ -22,15 +22,15 @@ Haystack es una plataforma que facilita la construcción de aplicaciones de AI c
 
 ### <div class="text-gray-300">Principales Características</div> 
 
-1. **Modularidad**: Puedes combinar componentes que manejen diferentes tareas como conversión, embebido de texto y escritura de documentos en bases de datos.
-2. **Flexibilidad en almacenamiento**: Soporta múltiples tipos de **Document Stores**, como almacenamiento en memoria o bases de datos distribuidas.
-3. **Integración con modelos avanzados**: Compatible con modelos de **OpenAI** para tareas como embebido de documentos y recuperación de información.
+1. Modularidad: Puedes combinar componentes que manejen diferentes tareas como conversión, embebido de texto y escritura de documentos en bases de datos.
+2.Flexibilidad en almacenamiento: Soporta múltiples tipos de "Document Stores", como almacenamiento en memoria o bases de datos distribuidas.
+3. Integración con modelos avanzados: Compatible con modelos de "OpenAI" para tareas como embebido de documentos y recuperación de información.
 
 ## <div class="text-gray-300">Cómo Funciona Haystack</div> 
 
 ### <div class="text-gray-300">Componentes</div> 
 
-En Haystack, los **Componentes** son las unidades básicas que ejecutan tareas específicas. Por ejemplo, el **OpenAIDocumentEmbedder** convierte textos en vectores para una búsqueda eficiente.
+En Haystack, los Componentes son las unidades básicas que ejecutan tareas específicas. Por ejemplo, el "OpenAIDocumentEmbedder" convierte textos en vectores para una búsqueda eficiente.
 
 ```python
 from haystack.components.embedders import OpenAIDocumentEmbedder
@@ -106,5 +106,6 @@ Haystack ofrece una solución poderosa y flexible para construir aplicaciones de
 
 Referencias:
 
-Documentación oficial de Haystack https://haystack.deepset.ai/
-Repositorio GitHub de Haystack
+Documentación oficial de Haystack 
+<a class="text-red-500" href="https://haystack.deepset.ai/">Documentación</a></div>
+
