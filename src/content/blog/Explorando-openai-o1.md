@@ -3,10 +3,10 @@ draft: false
 title: "Explorando OpenAI O1: Un Nuevo Horizonte para Ingenieros de Software en IA"
 snippet: "La inteligencia artificial avanza rápidamente y OpenAI O1 está a la vanguardia de esta revolución. Descubre cómo esta innovación abre nuevas oportunidades para ingenieros de software enfocados en IA."
 image: {
-    src: "https://raw.githubusercontent.com/dailynauta/dailynauta.github.io/main/public/blogimg/openai-o1.png",
+    src: "https://raw.githubusercontent.com/dailynauta/dailynauta.github.io/main/public/blogimg/openia.png",
     alt: "OpenAI O1, Inteligencia Artificial, Ingeniería de Software"
 }
-publishDate: "2024-09-07 01:39"
+publishDate: "2024-09-12 01:39"
 category: "Inteligencia Artificial"
 author: "devjaime"
 tags: [IA, OpenAI O1, Ingeniería de Software]
