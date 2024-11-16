@@ -2,7 +2,7 @@
 draft: false
 title: "El avance en inteligencia artificial no se detiene, y Claude 3.5 de Anthropic ha dado un paso revolucionario. Su nueva habilidad para interactuar con interfaces gráficas de usuario, como si fuera un humano, promete transformar industrias completas.."
 image: {
-    src: "https://raw.githubusercontent.com/dailynauta/dailynauta.github.io/main/public/blogimg/openia.png",
+    src: "https://raw.githubusercontent.com/dailynauta/dailynauta.github.io/main/public/blogimg/claude35.png",
     alt: "Claude, Inteligencia Artificial, Ingeniería de Software"
 }
 publishDate: "2024-11-15 01:39"
